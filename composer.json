@@ -1,0 +1,27 @@
+{
+    "name" : "axn/ressources-limits-handler",
+    "description" : "A simple tool to expand resource limits.",
+    "authors" : [{
+            "name" : "AXN Informatique",
+            "email" : "developpement@axn.fr"
+        }
+    ],
+    "license" : "private",
+    "require" : {
+        "php" : ">=5.4.0",
+        "laravel/framework" : "5.5.*",
+        "axn/laravel-glide" : "~1.4"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Axn\\ImageRequestHandler\\" : "src/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Axn\\ImageRequestHandler\\ServiceProvider"
+            ]
+        }
+    }
+}
