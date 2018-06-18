@@ -2,11 +2,11 @@
 
 namespace Axn\RessourcesLimitsHandler;
 
-class MemoryLimit extends PhpInitLimitAbstract
+class MemoryLimit extends PhpInitLimitHandler
 {
-    const NAME = 'memory_limit';
+    protected static $name = 'memory_limit';
 
-    const DEFAULT = '512M';
+    protected static $default = '512M';
 
-    const FORCE = -1;
+    protected static $force = -1;
 }

@@ -2,11 +2,11 @@
 
 namespace Axn\RessourcesLimitsHandler;
 
-class MaxExecutionTime extends PhpInitLimitAbstract
+class MaxExecutionTime extends PhpInitLimitHandler
 {
-    const NAME = 'max_execution_time';
+    protected static $name = 'max_execution_time';
 
-    const DEFAULT = 3600;
+    protected static $default = 3600;
 
-    const FORCE = 0;
+    protected static $force = 0;
 }
